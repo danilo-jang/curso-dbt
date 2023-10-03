@@ -1,6 +1,6 @@
 {{
     config(
-        materialized: 'table',
+        materialized= 'table',
         pre_hook=["
             begin;
             lock table {{target.schema}}.bireport;
