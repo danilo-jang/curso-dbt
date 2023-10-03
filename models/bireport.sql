@@ -4,7 +4,7 @@
         pre_hook=["
             begin;
             lock table {{target.schema}}.bireport;
-        "]
+        "],
         post_hook= ["
             commit;
             GRANT USAGE ON SCHEMA {{target.schema}} TO GROUP bi_users;
